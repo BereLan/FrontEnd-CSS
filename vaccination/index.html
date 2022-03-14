@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccination Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./style.css">
+</head>
+    <body>
+        <main class="main-content">
+            <nav class="nav-bar">
+                <a href="" class="logo">Vaccination</a>
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="#dataBase" class="fontSizeNavBar">Database</a></li>
+                    <li class="nav-item"><a href="#education" class="fontSizeNavBar">Education</a></li>
+                    <li class="nav-item"><a href="#news" class="fontSizeNavBar">News</a></li>
+                    <li class="nav-item"><a href="#regulation" class="fontSizeNavBar">Regulation</a></li>
+                    <li class="nav-item active-link"><a href="#hoaxBuster" class="fontSizeNavBar">Hoax Buster</a></li>
+                </ul>
+            </nav>
+            <div class="container-fight-virus">
+                <div class="subcon-fight-virus">
+                    <h2>Fight Virus <br> With Vaccines</h2>
+                    <p>Let's stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get infected</p>
+                    <div class="two-facts">
+                        <span><i class="fa-solid fa-shield icon-yellow"></i>Best Protection</span>
+                        <span><i class="fa-solid fa-star icon-yellow"></i>Selected Vacciness</span>    
+                    </div>
+                    <section class="schedule-section">
+                        <span><i class="fa-solid fa-clock icon-blue-main"></i>Schedule your vaccinations</span>
+                    </section>
+                </div>
+                <div class="subcon-nurse-image">
+                    <img src="./assets/images/clinicianb.jpg" alt="Clinician A">
+                </div>
+                <form class="schedule-form" action="">
+                    <fieldset class="schedule-vaccine">
+                        <fieldset class="schedule-details">
+                            <div class="locations-box"> 
+                                <label for="locations"><i class="fa-solid fa-location-dot icon-blue-secondary"></i>Location</label>
+                                <input list="locations" id="location" name="location" value="Bent County">
+                                <datalist id="locations">
+                                    <option value="Adams County"></option>
+                                    <option value="Alamosa County"></option>
+                                    <option value="Arapahoe County"></option>
+                                    <option value="Archuleta County"></option>
+                                    <option value="Baca County"></option>
+                                    <option value="Bent County"></option>
+                                    <option value="Boulder County"></option>
+                                    <option value="City and County of Broomfield"></option>
+                                    <option value="Chaffee County"></option>
+                                    <option value="Cheyenne County">
+                                </option></datalist>
+                            </div>
+                            <div class="appointment-box">
+                                <label for="appointmentDate"><i class="fa-solid fa-calendar-days icon-blue-secondary"></i>Date</label>
+                                <input type="date" name="appointmentDate" id="appointmentDate" placeholder="16/02/2022">
+                            </div>    
+                            <div class="vaccine-box">
+                                <label for="vaccineType"><i class="fa-solid fa-pen icon-blue-secondary"></i>Vaccine Type</label>
+                                <select name="vaccineType" id="vaccineType">
+                                    <option value="astraZeneca">AstraZeneca</option>
+                                    <option value="moderna">Moderna</option>
+                                    <option value="pfizer">Pfizer</option>
+                                    <option value="sinovac">Sinovac</option>
+                                </select>
+                            </div>
+                            <div class="submit-box">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </fieldset>
+                    </fieldset>
+                </form>
+            </div> 
+            <section class="vaccine-brands">
+                <img src="./assets/images/lab_brands.jpg" alt="Vaccines Brands">
+            </section> 
+            <div class="container-why-vaccine">
+                <div class="subcon-why-vaccine">
+                    <h2>Why shuould I vaccine?</h2>
+                    <p>In order to avoid any doubts about getting the COVID-19 vaccine, identify the following 4 benefits of COVID-19 vaccination:</p>
+                </div>
+                <div class="subcon-empty">
+                </div>
+            </div>
+            <div class="container-reasons">
+                <div class="subcon-reasons">
+                    <span><i class="fa-solid fa-sliders icon-blue-secondary"></i></span>
+                    <h3>Minimize the spread of viruses</h3>
+                    <p>Vaccine has been proven effective to prevent someone from getting infected with Coronavirus</p>
+                </div>
+                <div class="subcon-reasons">
+                    <span><i class="fa-solid fa-shield icon-blue-secondary"></i></span>
+                    <h3>Forming antibodies</h3>
+                    <p>COVID-19 vaccine proven to help shape antobody response for immune system</p>
+                    
+                </div>
+                <div class="subcon-reasons">
+                    <span><i class="fa-solid fa-user-group icon-blue-secondary"></i></span>
+                    <h3>Protecting people nearby</h3>
+                    <p>The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around us</p>
+                </div>
+                <div class="subcon-reasons">
+                    <span><i class="fa-solid fa-chart-line icon-blue-secondary"></i></span>
+                    <h3>Creating group immunity</h3>
+                    <p>COVID-19 vaccinationis also benefitial for creating group immunity or herd immunity</p>
+                </div>
+            </div>
+            <div class="container-preparations">
+                <div class="subcon-image-preparations">
+                    <img src="./assets/images/cliniciana.jpg" alt="Clinician B">
+                </div>
+                <div class="subcon-preparations">
+                    <h2>Preparations Before Vaccine</h2>
+                    <p>The succes of vaccines is strongly influenced by the streght of the body's immune system. Therefore, there are several things that can be tried to make the COVID-19 vaccine work:</p>
+                    <div class="cont-preparations-list">
+                        <div class="subcon-preparations-list">
+                            <span><i class="fa-solid fa-shield icon-blue-secondary"></i>Avoid Alcoholic beverages</span>
+                        </div>
+                        <div class="subcon-preparations-list">
+                            <span><i class="fa-solid fa-square-xmark icon-blue-secondary"></i>Avoid Stress</span>
+                        </div>
+                        <div class="subcon-preparations-list">
+                            <span><i class="fa-solid fa-utensils icon-blue-secondary"></i>Eat healthy food</span>
+                        </div>
+                        <div class="subcon-preparations-list">
+                            <span><i class="fa-solid fa-moon icon-blue-secondary"></i>Get enough sleep</span>
+                        </div>
+                        <div class="subcon-preparations-list">
+                            <span><i class="fa-solid fa-heart-pulse icon-blue-secondary"></i>Excercise or physical activity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-emergency">
+                <div class="subcon-emergency">
+                    <h2>Emergency Contact</h2>
+                    <p>Contact one of the contacts below if you or your family feel unwell and have similar symptomps such as COVID-19, make sure you also take care of yourself before reporting to us:</p>
+                    <div class="subcon-contact-info">
+                        <div class="subcon-contact-type">
+                            <span><i class="fa-solid fa-phone icon-blue-secondary"></i></span>
+                            <h3>Call</h3>
+                            <br><p>720-332-3200</p>
+                            <button>Call Now</button>
+                        </div>
+                        <div class="subcon-contact-type">
+                            <span><i class="fa-solid fa-comment-dots icon-blue-secondary"></i></span>
+                            <h3>Chat</h3>
+                            <br><p>720-332-3200</p>
+                            <button>Chat Now</button>
+                        </div>
+                        <div class="subcon-contact-type">
+                            <span><i class="fa-solid fa-video icon-blue-secondary"></i></span>
+                            <h3>Video Call</h3>
+                            <br><p>720-332-3200</p>
+                            <button>Video Call Now</button>
+                        </div>
+                        <div class="subcon-contact-type">
+                            <span><i class="fa-solid fa-envelope icon-blue-secondary"></i></span>
+                            <h3>Message</h3>
+                            <br><p>720-332-3200</p>
+                            <button>Message Now</button>
+                        </div>
+                    </div>        
+                </div>
+                <div class="subcon-image-contact">
+                    <img src="./assets/images/doctorc.jpg" alt="Clinician C">
+                </div>        
+            </div>
+            <footer class="footer">
+                <div class="footer-top-left">
+                    <div class="footer-text">
+                        <h2 href="#home" class="logo2">Vaccination</h2>
+                        <p>Our goal is to help the world free from the ongoing pandemic</p>
+                    </div>
+                    
+                </div>
+                <div class="footer-top-right">
+                    <div class="footer-content">
+                        <span>About</span>
+                        <ul class="footer-links">
+                            <li><a href="#abooutus">About US</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="news">News &amp; Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-content">
+                        <span>Company</span>
+                        <ul class="footer-links">
+                            <li><a href="#howwework">How We Work?</a></li>
+                            <li><a href="capital">Capital</a></li>
+                            <li><a href="secutity">Security</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-content">
+                        <span>Support</span>
+                        <ul class="footer-links">
+                            <li><a href="#faqs">FAQs</a></li>
+                            <li><a href="supportcenter">Support Center</a></li>
+                            <li><a href="contact">Contact US</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom-left">
+                    <p>@2021 Vaccination. All right reserved</p>
+                </div>
+                <div class="footer-bottom-right">
+                    <div class="footer-tc">
+                        <a href="t&amp;c">Terms &amp; Agreements</a>
+                        <a href="#privacypolicy">Privacy Policy</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>

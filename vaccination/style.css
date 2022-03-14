@@ -1,0 +1,682 @@
+/*
+    Fonts families
+*/
+@import url('http://fonts.cdnfonts.com/css/montserrat');
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('./assets/fonts/Urbanist-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Urbanist-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('./assets/fonts/Urbanist-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Urbanist-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.logo{
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.logo2{
+    font-weight: 800;
+    font-size: 20px;
+    color:#2A4AC8;
+}
+
+/*
+    Global Styles
+*/
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --font-family-titles: "Montserrat", Helvetica, Arial, sans-serif;
+    --font-family-content: "Urbanist";
+    --titles-blue:  #1f3e72;
+    --primary-blue: #2A4AC8;
+    --base-blue: #2A4AC8;
+    --secondary-blue: #2A4AC8;
+    --third-blue: #148AE2;
+    --fourth-blue: #3269D9;
+    --gray-typo: #6F7C92;
+    --gray-decorations: #E7F5FB;
+    --icons-yellow: #FFD038;
+    --gray-navbar: #E7F5FB;
+    --gray-fotter: #EEF3FF;
+    /**/
+    --nav-box-shadow: 2px 3px 15px -2px rgba(20,60,115,0.5)
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: var(--font-family-content);
+    color: var(--gray-typo);
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+html {
+    font-family: var(--font-family-content);
+
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-family-titles);
+    color: var(--titles-blue) !important;
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+p, a {
+    font-stretch:semi-expanded;
+    word-spacing: 2px;
+    line-height: 2;
+    font-weight: bold !important;
+    color: #6d7b93;
+}
+
+i {
+    margin-right: 12px;
+}
+
+a {
+    text-decoration: none;
+    font-stretch:semi-expanded;
+    letter-spacing: 0.5px;
+}
+
+/*
+    Navbar Styles
+*/
+/*Style Navigation bar*/
+.nav-bar {
+    width: 100%;
+    padding: 2.5em 3em 2.5em 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(231,244,252,1) 50%);
+}
+
+.nav-bar .logo {
+    font-family: var(--font-family-titles);
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.nav-bar .nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.fontSizeNavBar{
+    font-size: 30px;
+}
+
+.nav-bar .nav-item a {
+    display: inline-block;
+    padding: 1em 2em;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.nav-bar .nav-item:hover,
+.nav-bar .nav-item.active-link {
+    background-color: var(--primary-blue);
+    border-radius: 5px;
+    box-shadow: var(--nav-box-shadow);
+}
+
+.nav-bar .nav-item.active-link a {
+    color: var(--white);
+}
+
+.nav-bar .nav-item:hover a {
+    color: var(--white);
+}
+
+
+/*
+    Main container
+*/
+
+.main-content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Style Fight Virus with vaccines and nurse image*/
+
+/* created a container for two sections*/
+.container-fight-virus {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.subcon-fight-virus {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}
+
+.subcon-fight-virus h1,
+.subcon-fight-virus p { 
+    margin-left: 10%;
+    width: 60%;
+}
+
+.subcon-fight-virus p {
+    font-weight: bold;
+    margin-top: 5em;
+}
+
+.subcon-fight-virus h2 {
+    margin-top: 10%;
+    font-size: 3em;
+    padding-left: 1.2em;
+    color: var(--titles-blue);
+    word-spacing: 0;
+}
+
+.subcon-fight-virus p {
+    margin-top: 4%; 
+}
+
+.subcon-fight-virus .schedule-section {
+    margin-left: 0%;
+    margin-top: 30%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subcon-fight-virus .schedule-section span {
+    font-weight: bold;
+    color: var(  --titles-blue);
+}
+
+.subcon-fight-virus .schedule-section span i {
+    color: var(  --titles-blue);
+    background-color: #e2e9ff;
+    padding: 0.7em;
+    font-size: 0.7em;
+}
+
+.subcon-nurse-image {
+    width: 50%;
+    display: flex;
+    height: 800px;
+    background: #0056c5;
+    /* background: linear-gradient(90deg, rgba(20,138,226,1) 37%, rgba(50,105,217,1) 70%); */
+}
+
+.subcon-nurse-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.two-facts {
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-yellow {
+    color: #ffce0a;
+    background-color: #FFF2BD;
+    padding: 0.7em;
+    font-size: 0.7em;
+}
+
+span{
+    color: #193C73;
+}
+
+form.schedule-form {
+    margin-left: 6%;
+    width: 70%;
+    position: absolute;
+    bottom: 1.5em;
+    left: -29px;
+    box-shadow: 2px 3px 15px -2px rgb(20 60 115 / 50%);
+}
+
+.schedule-vaccine {
+    border-style: none;
+    color: #193C73;
+    font-weight: bold;    
+    background: rgba(255,255,255,0.9);
+    border: none;
+}
+
+.schedule-details {
+    border-style: none;
+    border-radius: 4px;
+    padding: 2em 2em;
+    border: none;
+}
+
+.schedule-details label {
+    color:#6D7C94;
+    font-weight: normal;
+}
+
+.schedule-details i {
+    color: #193C73;
+}
+
+.icon-blue-secondary {
+    color: var( --titles-blue);
+    background-color: #e2e9ff;
+    padding: 0.7em;
+    font-size: 0.7em;
+}
+
+input[name="location"] {
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #193C73;
+    padding: 1%;
+    width: 100%;
+}
+
+input[name=appointmentDate] {
+    color: #193C73;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    padding: 1%;
+    width: 100%;
+}
+
+select[name=vaccineType] {
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #193C73;
+    padding: 1%;
+    width: 100%;
+    border: none;
+    background: transparent;
+}
+
+input[type=submit] {
+    padding: 9%;
+    font-weight: bold;
+    font-stretch:semi-expanded;
+    background-color: #2549C9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    width: 90%;
+    margin-left: 10%;
+}
+
+input[type=submit]:hover {
+    box-shadow: 2px 3px 15px -2px rgba(20,60,115,0.5);
+}
+
+.locations-box, 
+.appointment-box,
+.vaccine-box, 
+.submit-box {
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width:25%;
+    padding: 2px;
+}
+
+/* Vaccines Brands Section */
+
+.vaccine-brands img{
+    width: 100%;
+}
+
+/*Why should I vaccine? Section*/
+
+.container-why-vaccine {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.subcon-why-vaccine {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    
+}
+
+.subcon-why-vaccine h2,
+.subcon-why-vaccine p {
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.subcon-empty {
+    width: 50%;
+    display: flex;
+    height: 200px;
+}
+
+.container-reasons {
+    width: 100%;
+    max-height: fit-content;
+    padding: 1% 5%;
+}
+
+.subcon-reasons {
+    width: 23%;
+    float: left;
+    justify-content: space-between;
+    border-color: #FAFAFF;
+    border-style: solid;
+    border-radius: 5%;
+    padding: 2%;
+    margin: 1%;
+    height: 350px;
+}
+
+.subcon-reasons i {
+    font-size: 1.5em;
+    margin-bottom: 10%;
+    border-radius: 5px;;
+}
+
+.subcon-reasons h3 {
+    margin-bottom: 1.5em;
+}
+
+.subcon-reasons:hover {
+    box-shadow: 2px 3px 15px -2px rgba(20,60,115,0.5);
+}
+
+/* Preparations Section */
+
+.container-preparations {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-height: fit-content;   
+}
+
+.subcon-image-preparations {
+    width: 50%;
+    display: flex;
+}
+
+.subcon-image-preparations img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.subcon-preparations {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content;
+    font-weight: bold;
+}
+
+.subcon-preparations h2,
+.subcon-preparations p,
+.subcon-image-preparations p {
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.cont-preparations-list {
+    width: 80%;
+    max-height: fit-content;
+    padding: 1% 5%;
+}
+
+.subcon-preparations-list {
+    height: 20%;
+    width: 100%;
+    border-color: #FAFAFF;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 3%;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    font-weight: bold;   
+}
+
+.subcon-preparations-list:hover {
+    box-shadow: 2px 3px 15px -2px rgba(20,60,115,0.5);
+}
+
+/*Emergency Contact Section */
+
+.container-emergency {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-height: fit-content;
+    font-weight: bold;
+}
+
+.subcon-emergency {
+    width: 50%;
+}
+
+.subcon-emergency p,
+.subcon-emergency h2 {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.subcon-contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3em;
+    margin-top: 4em;
+    padding: 2em;
+}
+
+.subcon-contact-info p {
+    font-size: px;
+    margin: 0;
+    margin-top: -6px;
+}
+
+.subcon-contact-type {
+    border-style: solid;
+    float: left;
+    padding: 3%;
+    margin: 2%;
+    border-color: #FAFAFF;
+    border-style: solid;
+    border-radius: 5%;
+}
+
+.subcon-contact-type i {
+    font-size: 1.5em;
+    margin-bottom: 10%;
+    float: left;
+    color: #2549C9;
+}
+
+.subcon-contact-type button {
+    width: 100%;
+    border-style: none;
+    background-color: #EBF1FE;
+    color: #2549C9;
+    font-weight: bold;
+    font-stretch:semi-expanded;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    padding: 1.5em;
+    margin-top: 10%;
+}
+
+.subcon-contact-type button:hover {
+    background-color: #2549C9;
+    color: #EBF1FE;
+    box-shadow: 2px 3px 15px -2px rgba(20,60,115,0.5)
+}
+
+.subcon-contact-type:hover {
+    box-shadow: 2px 3px 15px -2px rgba(20,60,115,0.5);
+}
+
+.subcon-image-contact {
+    width: 50%;
+}
+
+.subcon-image-contact img{
+    max-width: 100%;
+    height: auto;
+    object-fit:cover;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-height: fit-content;
+    background-color: var(--gray-fotter);
+}
+
+.footer-top-left {
+    width: 50%;
+    max-height: 80%;
+    margin-top: 3%;
+}
+
+.footer-text {
+    margin-left: 10%;
+    width: 30%;
+}
+
+.footer-top-right {
+    width: 50%;
+    max-height: 80%;
+    margin-top: 3%;
+}
+
+.footer-content {
+    width: 33%;
+    float: left;
+    line-height: 2;
+}
+
+.footer-content span {
+    font-weight: bold;
+    font-size: 1.2em;
+    
+}
+
+.footer-links {
+    list-style-type: none;
+}
+
+.footer-bottom-left {
+    width: 50%;
+    max-height: 20%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.footer-bottom-left p {
+    margin-left: 10%;
+}
+
+.footer-bottom-right {
+    width: 50%;
+    max-height: 80%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    
+}
+.footer-bottom-right a {
+    margin-left: 5%;
+}
+
+.footer-tc{
+    display: flex;
+    justify-content: end;
+    margin-right: 15%;
+}
+
+@media (min-width: 1980px) {
+    .main-content {
+        width: 1280px;
+        margin: 0 auto;
+    }
+
+    .subcon-why-vaccine h2,
+    .subcon-why-vaccine p {
+        margin-left: 4%;
+    }
+
+    .container-reasons {
+        padding: 0; 
+    }
+}
